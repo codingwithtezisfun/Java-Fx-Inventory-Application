@@ -1,0 +1,16 @@
+CREATE TABLE orders (
+    OrderID INT AUTO_INCREMENT PRIMARY KEY,
+    CustomerID INT,
+    CustomerName VARCHAR(255),
+    UserID INT,
+    ProductName VARCHAR(255),
+    OrderDate DATE,
+    ShippingDate DATE,
+    Quantity INT,
+    UnitPrice DECIMAL(10, 2),
+    TotalAmount DECIMAL(10, 2) AS (Quantity * UnitPrice) STORED,
+    OrderStatus VARCHAR(50),
+    Address TEXT,
+    FOREIGN KEY (CustomerID) REFERENCES customers(CustomerID),
+    FOREIGN KEY (UserID) REFERENCES users(id)
+);

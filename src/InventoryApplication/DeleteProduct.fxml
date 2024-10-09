@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="259.0" prefWidth="516.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="InventoryApplication.DeleteProduct">
+   <center>
+      <Pane prefHeight="400.0" prefWidth="554.0" BorderPane.alignment="CENTER">
+         <children>
+            <Pane prefHeight="259.0" prefWidth="516.0" style="-fx-background-color: #708090;">
+               <children>
+                  <Label layoutX="151.0" layoutY="14.0" text="DELETE PRODUCT" underline="true">
+                     <font>
+                        <Font name="System Bold" size="31.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="97.0" layoutY="88.0" text="BATCH NO:">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="deleteBtn" layoutX="239.0" layoutY="145.0" mnemonicParsing="false" onAction="#deleteProduct" prefHeight="45.0" prefWidth="240.0" style="-fx-background-color: #c4c3d0;" text="SUBMIT">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <ComboBox fx:id="batchNo" layoutX="239.0" layoutY="81.0" prefHeight="44.0" prefWidth="240.0" promptText="Enter Batch No" style="-fx-background-color: #c4c3d0;" />
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>
